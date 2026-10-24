@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#170b10" />
+  <meta name="description" content="A little birthday surprise for Pitahontas." />
+  <title>Happy Birthday, Pitahontas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <div class="memory memory-one"><span class="memory-scene"><img class="memory-photo" src="images/memory-1.jpg" alt=""></span><small>a little moment to remember</small></div>
+    <div class="memory memory-two"><span class="memory-scene"><img class="memory-photo" src="images/memory-2.jpg" alt=""></span><small>one of my favorite memories</small></div>
+    <div class="memory memory-three"><span class="memory-scene"><img class="memory-photo" src="images/memory-3.jpg" alt=""></span><small>this one always makes me smile</small></div>
+    <div class="memory memory-four"><span class="memory-scene"><img class="memory-photo" src="images/memory-4.jpg" alt=""></span><small>here is to many more moments</small></div>
+  </div>
+  <header class="topbar">
+    <a class="wordmark" href="#top"><span class="wordmark-mark">✳</span> a little celebration · from najipOo</a>
+    <button class="photo-action" id="addPhotos"><span>＋</span> Add photos</button>
+    <input id="photoInput" type="file" accept="image/*" multiple hidden />
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> A SPECIAL DAY FOR PITAHONTAS <span class="eyebrow-line"></span></div>
+      <h1>Happy<br><em>birthday.</em></h1>
+      <p class="hero-copy">May this new year bring you more good things<br class="desktop-break"/> and more reasons to <span>smile every day.</span></p>
+      <div class="hero-note"><span class="note-star">✳</span><span>Two little surprises are waiting for you.</span><span class="note-star">✳</span></div>
+      <a href="#surprises" class="scroll-cue">SCROLL TO OPEN <span>↓</span></a>
+    </section>
+    <section class="gifts" id="surprises">
+      <div class="section-heading"><span class="section-index">01 — 02</span><h2>Two little things, just for you.</h2><p>Take your time and open them one by one.</p></div>
+      <div class="gift-grid">
+        <button class="gift-card letter-card" data-open="letter" aria-label="Open your birthday letter">
+          <div class="gift-topline"><span>JUST FOR YOU</span><span>01</span></div>
+          <div class="gift-art letter-art"><div class="envelope"><div class="envelope-paper"><span>For you,</span><i>✳</i></div><div class="envelope-flap"></div><div class="envelope-seal">✳</div></div><span class="spark spark-a">✦</span><span class="spark spark-b">✧</span></div>
+          <div class="gift-bottom"><div><h3>A little letter</h3><p>A few words, straight from the heart.</p></div><span class="open-arrow">↗</span></div>
+        </button>
+        <button class="gift-card car-card" data-open="car" aria-label="Open your Toyota GR Supra surprise">
+          <div class="gift-topline"><span>FOR THE CAR LOVER</span><span>02</span></div>
+          <div class="gift-art car-art"><span class="car-glow"></span><span class="road-line"></span><img class="supra" src="images/supra.png" alt="Toyota Supra merah"><div class="car-caption">GR SUPRA <span>·</span> A90</div><div class="speed-lines"></div></div>
+          <div class="gift-bottom"><div><h3>A little joyride</h3><p>The engine is ready. Shall we go?</p></div><span class="open-arrow">↗</span></div>
+        </button>
+      </div>
+      <div class="closing-note"><span>✳</span> Hope today feels a little more special. <span>✳</span></div>
+    </section>
+  </main>
+  <footer><span>made with lots of love · najipOo</span><span>24 / 7 / always</span></footer>
+  <div class="modal" id="letterModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="letterTitle"><div class="modal-backdrop" data-close></div><div class="modal-panel letter-panel"><button class="close-modal" data-close aria-label="Close">×</button><span class="modal-kicker">A LITTLE NOTE FOR YOU</span><div class="letter-icon">✳</div><h2 id="letterTitle">For Pitahontas</h2><div class="letter-copy"><p>Happy Birthday, Pitahontas! ❤️🎂 I hope life gets kinder and better to you as you grow older, and that you always have reasons to smile and be happy. I know you’ve worked so hard for your dreams, and I really hope everything goes smoothly with your studies, especially your thesis defense. Hopefully, soon I’ll get to see you become the amazing dentist you’ve always worked so hard to be. You deserve so many good things in life, and I’ll always wish the best for you. Keep smiling and stay happy, birthday girl! ❤️🦷✨</p></div><div class="signature">With love, najipOo <span>✳</span></div></div></div>
+  <div class="modal" id="carModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="carTitle"><div class="modal-backdrop" data-close></div><div class="modal-panel car-panel"><button class="close-modal" data-close aria-label="Close">×</button><span class="modal-kicker">A LITTLE SURPRISE FOR YOU</span><h2 id="carTitle">Ready for a little drive?</h2><p class="car-subtitle">Toyota GR Supra · A90</p><div class="drive-stage"><div class="drive-stars">✦　　·　　 ✧　　　 ·　 ✦</div><div class="drive-horizon"></div><div class="drive-road"><span></span><span></span><span></span></div><img class="drive-car" src="images/supra.png" alt=""><div class="headlight"></div></div><div class="drive-controls"><button class="start-button" id="startDrive"><span>▶</span> START THE ENGINE</button><span class="drive-hint">press the button to start</span></div></div></div>
+  <div class="toast" id="toast" role="status">Photos added for this visit ✳</div>
+  <script src="script.js"></script>
+</body>
+</html>
